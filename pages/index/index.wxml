@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 顶部标题 -->
+  <view class="header">
+    <text class="title">中轴树语</text>
+  </view>
+
+  <!-- Banner区域 -->
+  <view class="banner">
+    <image class="banner-bg" src="/assets/images/banner.png" mode="aspectFill"></image>
+    <view class="faq-btn" bindtap="navigateToFAQ">
+      <text>常见问题</text>
+      <text style="margin-right: 10rpx;">→</text>
+    </view>
+  </view>
+
+  <!-- 导航区 -->
+  <view class="navigation">
+    <view class="nav-buttons">
+      <view class="nav-btn {{activeTab === 'ar' ? 'active' : ''}}" bindtap="switchTab" data-tab="ar">
+        AR使用介绍
+      </view>
+      <view class="nav-btn {{activeTab === 'collection' ? 'active' : ''}}" bindtap="switchTab" data-tab="collection">
+        个人收藏打卡
+      </view>
+    </view>
+
+    <!-- 页面指示器 -->
+    <view class="page-indicator">
+      <view class="dot active"></view>
+      <view class="dot"></view>
+      <view class="dot"></view>
+      <view class="dot"></view>
+    </view>
+
+    <!-- 地图区域 -->
+    <view class="map-preview">
+      <image class="map-image" src="/assets/images/map-preview.png" mode="aspectFill"></image>
+      <text class="map-tip">通过地图MAPS查看标记的AR互动点位，前往标记点寻找可拍摄指示牌。</text>
+    </view>
+  </view>
+</view>

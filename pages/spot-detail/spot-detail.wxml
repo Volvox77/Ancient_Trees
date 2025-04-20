@@ -1,0 +1,53 @@
+<view class="detail-container">
+  <!-- 顶部导航栏 -->
+  <view class="nav-bar">
+    <view class="back-btn" bindtap="navigateBack">
+      <image class="back-icon" src="/assets/icons/back.png" mode="aspectFit"></image>
+    </view>
+    <view class="menu-btn">
+      <image class="menu-icon" src="/assets/icons/more.png" mode="aspectFit"></image>
+    </view>
+  </view>
+
+  <!-- 内容区域 -->
+  <scroll-view class="content-scroll" scroll-y>
+    <!-- 标题区域 -->
+    <view class="header">
+      <text class="title">{{spotData.trees[0].name}}</text>
+      <text class="subtitle">{{spotData.name}}{{spotData.trees[0].name}}</text>
+    </view>
+
+    <!-- 主图区域 -->
+    <view class="main-image">
+      <image src="{{spotData.headerImage || spotData.image}}" mode="aspectFill"></image>
+    </view>
+
+    <!-- 古树图片区域 -->
+    <view class="tree-image">
+      <image src="/assets/images/trees/{{spotData.trees[0].name}}.png" mode="aspectFill" 
+        style="border-radius: 24rpx;"></image>
+    </view>
+
+    <!-- 描述文本区域 -->
+    <view class="description">
+      <text class="desc-text">{{spotData.trees[0].description}}</text>
+      <text class="location-text">位置：{{spotData.trees[0].location}}</text>
+    </view>
+
+    <!-- 底部导航栏 -->
+    <view class="bottom-nav">
+      <view class="nav-item {{currentTab === 'home' ? 'active' : ''}}" bindtap="switchTab" data-tab="home">
+        <image src="/assets/icons/home.png" mode="aspectFit"></image>
+        <text>HOME</text>
+      </view>
+      <view class="nav-item {{currentTab === 'maps' ? 'active' : ''}}" bindtap="switchTab" data-tab="maps">
+        <image src="/assets/icons/map.png" mode="aspectFit"></image>
+        <text>MAPS</text>
+      </view>
+      <view class="nav-item {{currentTab === 'camera' ? 'active' : ''}}" bindtap="switchTab" data-tab="camera">
+        <image src="/assets/icons/camera.png" mode="aspectFit"></image>
+        <text>AR CAMERA</text>
+      </view>
+    </view>
+  </scroll-view>
+</view> 

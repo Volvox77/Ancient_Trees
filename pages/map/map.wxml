@@ -1,0 +1,47 @@
+<view class="map-container">
+  <!-- 顶部标题 -->
+  <view class="header">
+    <text class="title">中轴树语</text>
+  </view>
+
+  <!-- 中轴线地图区域 -->
+  <view class="map-content">
+    <view class="central-line"></view>
+    
+    <!-- 左侧景点 -->
+    <view class="left-spots">
+      <view class="spot-item" bindtap="navigateToDetail" data-spot="中山公园">
+        <image class="spot-icon" src="/assets/images/spots/zhongshan.png" mode="aspectFit"></image>
+        <text class="spot-name">中山公园</text>
+      </view>
+      
+      <view class="spot-item" bindtap="navigateToDetail" data-spot="故宫博物馆">
+        <image class="spot-icon" src="/assets/images/spots/gugong.png" mode="aspectFit"></image>
+        <text class="spot-name">故宫博物馆</text>
+      </view>
+      
+      <view class="spot-item" bindtap="navigateToDetail" data-spot="太庙">
+        <image class="spot-icon" src="/assets/images/spots/taimiao.png" mode="aspectFit"></image>
+        <text class="spot-name">太庙</text>
+      </view>
+    </view>
+    
+    <!-- 右侧景点 -->
+    <view class="right-spots">
+      <view class="spot-item" bindtap="navigateToDetail" data-spot="景山公园">
+        <image class="spot-icon" src="/assets/images/spots/jingshan.png" mode="aspectFit"></image>
+        <text class="spot-name">景山公园</text>
+      </view>
+      
+      <view class="spot-item" bindtap="navigateToDetail" data-spot="先农坛">
+        <image class="spot-icon" src="/assets/images/spots/xiannongtan.png" mode="aspectFit"></image>
+        <text class="spot-name">先农坛</text>
+      </view>
+      
+      <view class="spot-item" bindtap="navigateToDetail" data-spot="天坛公园">
+        <image class="spot-icon" src="/assets/images/spots/tiantan.png" mode="aspectFit"></image>
+        <text class="spot-name">天坛公园</text>
+      </view>
+    </view>
+  </view>
+</view> 

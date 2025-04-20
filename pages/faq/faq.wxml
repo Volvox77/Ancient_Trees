@@ -1,0 +1,30 @@
+<!--pages/faq/faq.wxml-->
+<view class="container">
+  <!-- 顶部导航栏 -->
+  <view class="nav-bar">
+    <view class="nav-back" bindtap="navigateBack">
+      <image class="back-icon" src="/assets/icons/back.png" mode="aspectFit"></image>
+    </view>
+    <view class="nav-title">
+      <image class="title-icon" src="/assets/icons/faq.png" mode="aspectFit"></image>
+      <text>常见问题与解答</text>
+    </view>
+    <view class="nav-right">
+      <image class="menu-icon" src="/assets/icons/menu.png" mode="aspectFit"></image>
+      <image class="share-icon" src="/assets/icons/share.png" mode="aspectFit"></image>
+    </view>
+  </view>
+
+  <!-- FAQ列表 -->
+  <view class="faq-list">
+    <view class="faq-item" wx:for="{{faqList}}" wx:key="id" bindtap="toggleFAQ" data-id="{{item.id}}">
+      <view class="faq-question">
+        <text>{{item.question}}</text>
+        <image class="arrow-icon {{item.isOpen ? 'open' : ''}}" src="/assets/icons/arrow-down.png" mode="aspectFit"></image>
+      </view>
+      <view class="faq-answer {{item.isOpen ? 'show' : ''}}">
+        <text>{{item.answer}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,124 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.container {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 88rpx 40rpx 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #4A6B4A;
+  font-weight: bold;
+}
+
+.banner {
+  position: relative;
+  margin: 0 20rpx 30rpx;
+}
+
+.banner-bg {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 20rpx;
+  object-fit: cover;
+}
+
+.faq-btn {
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 12rpx 24rpx;
+  border-radius: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.faq-btn text {
+  font-size: 28rpx;
+  color: #4A6B4A;
+}
+
+.navigation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20rpx;
+  width: 100%;
+  margin-bottom: 40rpx;
+}
+
+.nav-btn {
+  flex: 1;
+  max-width: 300rpx;
+  text-align: center;
+  padding: 20rpx 40rpx;
+  font-size: 32rpx;
+  color: #666666;
+  background-color: #F0F0F0;
+  border-radius: 40rpx;
+}
+
+.nav-btn.active {
+  color: #ffffff;
+  background-color: #A5C7A5;
+}
+
+.page-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 12rpx;
+  margin: 20rpx 0;
+}
+
+.dot {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background-color: #D8D8D8;
+}
+
+.dot.active {
+  background-color: #4A6B4A;
+}
+
+.map-preview {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.map-image {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 20rpx;
+}
+
+.map-tip {
+  font-size: 28rpx;
+  color: #666666;
+  text-align: center;
+  margin-top: 20rpx;
+  padding: 0 40rpx;
+  line-height: 1.5;
+}

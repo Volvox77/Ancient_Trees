@@ -1,0 +1,116 @@
+/* camera.wxss */
+.camera-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.camera {
+  width: 100%;
+  height: 100%;
+}
+
+.back-btn {
+  position: absolute;
+  top: 88rpx;
+  left: 32rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.back-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.scan-tip {
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 16rpx 32rpx;
+  border-radius: 32rpx;
+}
+
+.scan-tip text {
+  color: #ffffff;
+  font-size: 28rpx;
+}
+
+.scan-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500rpx;
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scan-border {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 8rpx solid rgba(255, 255, 255, 0.8);
+  border-radius: 24rpx;
+  overflow: hidden;
+}
+
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rpx;
+  background: #A5C7A5;
+  animation: scan 2s linear infinite;
+}
+
+.ar-icon {
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  opacity: 0.8;
+}
+
+.bottom-area {
+  position: absolute;
+  bottom: 120rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.help-btn {
+  background: rgba(165, 199, 165, 0.9);
+  padding: 16rpx 40rpx;
+  border-radius: 40rpx;
+}
+
+.help-btn text {
+  color: #ffffff;
+  font-size: 28rpx;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(500rpx);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} 

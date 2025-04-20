@@ -1,0 +1,35 @@
+<view class="container">
+  <!-- 顶部导航栏 -->
+  <view class="nav-bar">
+    <view class="nav-back" bindtap="navigateBack">
+      <image class="back-icon" src="/assets/icons/back.png" mode="aspectFit"></image>
+    </view>
+    <view class="nav-title">中轴树语</view>
+    <view class="nav-right">
+      <image class="menu-icon" src="/assets/icons/menu.png" mode="aspectFit"></image>
+      <image class="share-icon" src="/assets/icons/share.png" mode="aspectFit"></image>
+    </view>
+  </view>
+
+  <!-- 主要内容区域 -->
+  <view class="content">
+    <!-- 菜单列表 -->
+    <view class="menu-list">
+      <view class="menu-item" bindtap="navigateToAbout">
+        <view class="menu-icon-wrapper">
+          <image class="menu-item-icon" src="/assets/icons/about.png" mode="aspectFit"></image>
+        </view>
+        <text class="menu-text">关于我们</text>
+        <image class="arrow-icon" src="/assets/icons/arrow.png" mode="aspectFit"></image>
+      </view>
+
+      <view class="menu-item" bindtap="navigateToFAQ">
+        <view class="menu-icon-wrapper">
+          <image class="menu-item-icon" src="/assets/icons/faq.png" mode="aspectFit"></image>
+        </view>
+        <text class="menu-text">常见问题与解答</text>
+        <image class="arrow-icon" src="/assets/icons/arrow.png" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
+</view> 

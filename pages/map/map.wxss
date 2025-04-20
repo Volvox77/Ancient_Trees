@@ -1,0 +1,201 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  width: 100%;
+  height: 60vh;
+}
+
+.tree-list {
+  flex: 1;
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.tree-item {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.tree-image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+
+.tree-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tree-name {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.tree-location {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.tree-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.detail-content {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.detail-image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.detail-info {
+  padding: 20rpx;
+}
+
+.detail-name {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.detail-desc {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+  display: block;
+}
+
+.navigate-btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 28rpx;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+}
+
+/* map.wxss */
+.map-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAFDF8;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  padding: 88rpx 40rpx 20rpx;
+  text-align: center;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #4A6B4A;
+  font-weight: bold;
+}
+
+.map-content {
+  position: relative;
+  height: calc(100vh - 180rpx);
+  padding: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.central-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 8rpx;
+  background-color: #A5C7A5;
+  transform: translateX(-50%);
+}
+
+.left-spots,
+.right-spots {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40rpx 0;
+}
+
+.spot-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+  transition: transform 0.3s ease;
+}
+
+.spot-item:active {
+  transform: scale(0.95);
+}
+
+.spot-icon {
+  width: 240rpx;
+  height: 180rpx;
+  margin-bottom: 16rpx;
+}
+
+.spot-name {
+  font-size: 28rpx;
+  color: #4A6B4A;
+  text-align: center;
+  max-width: 200rpx;
+  line-height: 1.4;
+}
+
+/* 左侧景点特殊样式 */
+.left-spots .spot-item {
+  margin-right: 40rpx;
+}
+
+/* 右侧景点特殊样式 */
+.right-spots .spot-item {
+  margin-left: 40rpx;
+}
+
+/* 景点图标悬浮效果 */
+.spot-item:hover {
+  opacity: 0.8;
+} 
